@@ -53,7 +53,7 @@ function ContactFormHooks() {
     }
 
     setErrors(tempErrors);
-    return Object.keys(errors).length === 0;
+    return Object.keys(tempErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
@@ -62,7 +62,6 @@ function ContactFormHooks() {
     if (validateInput()) {
       dispatch(setFormData(localData));
       setLocalData(initialFormState);
-
     }
   };
 

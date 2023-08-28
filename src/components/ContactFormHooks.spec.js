@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from "@testing-library/user-event";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
