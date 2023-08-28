@@ -31,6 +31,8 @@ function ContactFormHooks() {
     });
   };
 
+  const hasErrors = Object.keys(errors).length === 0;
+
   const validateInput = () => {
     let tempErrors = {};
 
@@ -46,12 +48,12 @@ function ContactFormHooks() {
       tempErrors.email = "Invalid email";
     }
 
-    if (validator.isEmpty(localData.message)) {
-      tempErrors.message = "Message cannot be empty";
+    if (!validator.isLength(localData.message, { min: 10 })) {
+      tempErrors.message = "Message should be at least 10 characters long";
     }
 
     setErrors(tempErrors);
-    return Object.keys(tempErrors).length === 0;
+    return Object.keys(errors).length === 0;
   };
 
   const handleSubmit = (e) => {
@@ -101,7 +103,7 @@ function ContactFormHooks() {
       ></textarea>
       {errors.message && <p>{errors.message}</p>}
 
-      <button type="submit" disabled={!isChanged}>Submit</button>
+      <button type="submit" disabled={!isChanged && !hasErrors}>Submit</button>
     </form>
   );
 }
