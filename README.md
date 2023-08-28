@@ -1,7 +1,12 @@
 # Redux Contact Form Application Documentation
 
 ## Application Description
+
 This application is a React-based web interface built with Redux for state management. It consists of two primary components: a form and a data list display. The form component captures four fields: first name, last name, email, and a message. Data input undergoes validation processes using the `validator` package to ensure correctness, such as verifying that the email field conforms to standard formats and that the message has a minimum character length. Once the form's data passes the validation checks and is submitted, it's dispatched to the Redux store. The data list component retrieves and presents the stored data in a tabular format, fetching the data directly from the Redux store.
+
+## Sonar
+
+https://sonarcloud.io/summary/new_code?id=lewkan-org_lewkan-org
 
 ## Installation & Running Locally
 
