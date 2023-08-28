@@ -22,6 +22,4 @@ function App() {
   );
 }
 
-alert("YO")
-
 export default App;
