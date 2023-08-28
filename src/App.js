@@ -1,9 +1,13 @@
 import './App.css';
 import ContactFormHooks from './components/ContactFormHooks';
+import FormDataList from './components/FormDataList';
 
 function App() {
   return (
-    <ContactFormHooks />
+    <div>
+      <ContactFormHooks />
+      <FormDataList />
+    </div>
   );
 }
 
