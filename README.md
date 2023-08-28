@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Redux Contact Form Application Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Application Description
+This application is a React-based web interface built with Redux for state management. It consists of two primary components: a form and a data list display. The form component captures four fields: first name, last name, email, and a message. Data input undergoes validation processes using the `validator` package to ensure correctness, such as verifying that the email field conforms to standard formats and that the message has a minimum character length. Once the form's data passes the validation checks and is submitted, it's dispatched to the Redux store. The data list component retrieves and presents the stored data in a tabular format, fetching the data directly from the Redux store.
 
-## Available Scripts
+## Installation & Running Locally
 
-In the project directory, you can run:
+### Prerequisites:
+Ensure `Node.js` and `npm` (Node Package Manager) are installed on your machine. If they aren't, they can be obtained from [nodejs.org](https://nodejs.org/).
 
-### `yarn start`
+### Steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository:**  
+   ```
+   git clone https://github.com/xLEWKANx/chat-gpt-redux-app
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Navigate to the Directory:**  
+   Move into the application's root directory:
+   ```
+   cd path-to-directory
+   ```
 
-### `yarn test`
+3. **Install Dependencies:**  
+   Execute the following command to pull in required dependencies:
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Run the Development Server:**  
+   Initiate the local development server using:
+   ```
+   npm start
+   ```
 
-### `yarn build`
+5. **Open in Browser:**  
+   By default, the application should be accessible at:
+   ```
+   http://localhost:3000
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
