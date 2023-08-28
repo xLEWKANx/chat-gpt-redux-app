@@ -23,7 +23,7 @@ Ensure `Node.js` and `npm` (Node Package Manager) are installed on your machine.
 2. **Navigate to the Directory:**  
    Move into the application's root directory:
    ```
-   cd path-to-directory
+   cd chat-gpt-redux-app
    ```
 
 3. **Install Dependencies:**  
