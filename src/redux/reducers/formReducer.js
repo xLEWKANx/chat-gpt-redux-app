@@ -12,7 +12,7 @@ const formReducer = (state = initialState, action) => {
     case SET_FORM_DATA:
       return {
         ...state,
-        [action.payload.field]: action.payload.value
+        ...action.payload
       };
     default:
       return state;
